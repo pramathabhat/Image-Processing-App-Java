@@ -1,4 +1,4 @@
-﻿# Assignment 6: Harshitha Prabhu and Pramatha Bhat
+﻿# Assignment 6:
 
 ## Design:
 
