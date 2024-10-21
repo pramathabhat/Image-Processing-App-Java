@@ -1,0 +1,63 @@
+load res/hp.ppm hp
+save res/hp-saved.ppm hp
+brighten 100 hp hp-brighter
+save hp-brighter.ppm hp-brighter
+vertical-flip hp hp-vertical
+save res/hp-vertical.ppm hp-vertical
+horizontal-flip hp hp-horizontal
+save res/hp-horizontal.ppm hp-horizontal
+brighten -100 hp hp-darker
+save res/hp-darker.ppm hp-darker
+greyscale value-component hp hp-vgreyscale
+save res/hp-vgreyscale.ppm hp-vgreyscale
+greyscale luma-component hp hp-lgreyscale
+save res/hp-lgreyscale.ppm hp-lgreyscale
+greyscale intensity-component hp hp-igreyscale
+save res/hp-igreyscale.ppm hp-igreyscale
+rgb-split hp hp-red hp-green hp-blue
+save res/hp-red.ppm hp-red
+save res/hp-green.ppm hp-green
+save res/hp-blue.ppm hp-blue
+rgb-combine hp-combined hp-red hp-green hp-blue
+save res/hp-combined.ppm hp-combined
+load res/hp.ppm hp
+dither hp hp-dither
+save res/hp-dither.ppm hp-dither
+dither hp hp-dither
+save res/hp-dither.png hp-dither
+dither hp hp-dither
+save res/hp-dither.bmp hp-dither
+dither hp hp-dither
+save res/hp-dither.jpg hp-dither
+blur hp hp-blur
+save res/hp-blur.jpg hp-blur
+blur hp hp-blur
+save res/hp-blur.png hp-blur
+blur hp hp-blur
+save res/hp-blur.bmp hp-blur
+blur hp hp-blur
+save res/hp-blur.ppm hp-blur
+sharpen hp hp-sharpen
+save res/hp-sharpen.ppm hp-sharpen
+sharpen hp hp-sharpen
+save res/hp-sharpen.png hp-sharpen
+sharpen hp hp-sharpen
+save res/hp-sharpen.bmp hp-sharpen
+sharpen hp hp-sharpen
+save res/hp-sharpen.jpg hp-sharpen
+greyscale-transform hp hp-greyscale-transform
+save res/hp-greyscale-transform.jpg hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save res/hp-greyscale-transform.ppm hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save res/hp-greyscale-transform.bmp hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save res/hp-greyscale-transform.png hp-greyscale-transform
+sepia hp hp-sepia
+save res/hp-sepia.png hp-sepia
+sepia hp hp-sepia
+save res/hp-sepia.bmp hp-sepia
+sepia hp hp-sepia
+save res/hp-sepia.jpg hp-sepia
+sepia hp hp-sepia
+save res/hp-sepia.ppm hp-sepia

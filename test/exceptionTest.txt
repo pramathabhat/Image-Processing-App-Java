@@ -1,0 +1,26 @@
+load res/hp1.ppm hp
+save res/hp1-saved.ppm hp
+brighten 100 
+
+save hp-brighter.ppm hp-brighter
+vertical-flip hp-vertical
+save res/hp-vertical.ppm hp-vertical
+horizontal-flip hp hp-horizontal
+save res/hp-horizontal.ppm hp-horizontal
+brighten -100 hp hp-darker
+save res/hp-darker.ppm hp-darker
+
+#Test visualization
+
+greyscale value-component hp hp-vgreyscale
+save res/hp-vgreyscale.ppm hp-vgreyscale
+greyscale luma-component 
+save res/hp-lgreyscale.ppm hp-lgreyscale
+greyscale intensity-component hp hp-igreyscale
+save res/hp-igreyscale.ppm 
+rgb-split hp hp-red hp-green hp-blue
+save res/hp-red.ppm hp-red
+save res/hp-green.ppm hp-green
+save res/hp-blue.ppm hp-blue
+rgb-combine hp-combined hp-red hp-green hp-blue
+save res/hp-combined.ppm hp-combined

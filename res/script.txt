@@ -1,0 +1,63 @@
+load hp.ppm hp
+save hp-saved.ppm hp
+brighten 100 hp hp-brighter
+save hp-brighter.ppm hp-brighter
+vertical-flip hp hp-vertical
+save hp-vertical.ppm hp-vertical
+horizontal-flip hp hp-horizontal
+save hp-horizontal.ppm hp-horizontal
+brighten -100 hp hp-darker
+save hp-darker.ppm hp-darker
+greyscale value-component hp hp-vgreyscale
+save hp-vgreyscale.ppm hp-vgreyscale
+greyscale luma-component hp hp-lgreyscale
+save hp-lgreyscale.ppm hp-lgreyscale
+greyscale intensity-component hp hp-igreyscale
+save hp-igreyscale.ppm hp-igreyscale
+rgb-split hp hp-red hp-green hp-blue
+save hp-red.ppm hp-red
+save hp-green.ppm hp-green
+save hp-blue.ppm hp-blue
+rgb-combine hp-combined hp-red hp-green hp-blue
+save hp-combined.ppm hp-combined
+load hp.ppm hp
+dither hp hp-dither
+save hp-dither.ppm hp-dither
+dither hp hp-dither
+save hp-dither.png hp-dither
+dither hp hp-dither
+save hp-dither.bmp hp-dither
+dither hp hp-dither
+save hp-dither.jpg hp-dither
+blur hp hp-blur
+save hp-blur.jpg hp-blur
+blur hp hp-blur
+save hp-blur.png hp-blur
+blur hp hp-blur
+save hp-blur.bmp hp-blur
+blur hp hp-blur
+save hp-blur.ppm hp-blur
+sharpen hp hp-sharpen
+save hp-sharpen.ppm hp-sharpen
+sharpen hp hp-sharpen
+save hp-sharpen.png hp-sharpen
+sharpen hp hp-sharpen
+save hp-sharpen.bmp hp-sharpen
+sharpen hp hp-sharpen
+save hp-sharpen.jpg hp-sharpen
+greyscale-transform hp hp-greyscale-transform
+save hp-greyscale-transform.jpg hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save hp-greyscale-transform.ppm hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save hp-greyscale-transform.bmp hp-greyscale-transform
+greyscale-transform hp hp-greyscale-transform
+save hp-greyscale-transform.png hp-greyscale-transform
+sepia hp hp-sepia
+save hp-sepia.png hp-sepia
+sepia hp hp-sepia
+save hp-sepia.bmp hp-sepia
+sepia hp hp-sepia
+save hp-sepia.jpg hp-sepia
+sepia hp hp-sepia
+save hp-sepia.ppm hp-sepia

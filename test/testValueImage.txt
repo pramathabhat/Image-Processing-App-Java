@@ -1,0 +1,5 @@
+load test/testImg.ppm rect
+
+#Test greyscale value
+greyscale value-component rect rect-vgreyscale
+save test/rect-vgreyscale1.ppm rect-vgreyscale
