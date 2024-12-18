@@ -1,5 +1,3 @@
-﻿# Assignment 6:
-
 ## Design:
 
 We have an MVC design for this assignment and MVC is represented as 3 subpackages namely model, view and controller respectively.
